@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="style.css">
+     <title>Document</title>
+</head>
+<body>
+    
+   <div class="container my-2">
+    <form action="" id="form1">
+        <div class="mx-5 my-3 mb-5">
+
+            <!-- map side -->
+         <div  class="d-flex justify-content-center ">
+             <img src="https://traveltriangle.com/desktop_assets/build/commonIcon-icons-svg-1c4a0f4aa08ec7d683f452462d326219.svg#DestinationsIcon-usage" alt="">
+             
+         </div>
+         <p class="my-2 text-center">
+             <b>Where do you want to go?</b>
+         </p>
+
+         <div class="fromsec">
+          <div>
+            <!-- from section -->
+            <h6><b>To: </b></h6>
+          </div>
+
+          <!-- departure area -->
+          <div class="input-group mb-3 border">
+           <div class="input-group-prepend">
+             <span class="input-group-text bg-white rounded-0 border border-white" id="basic-addon1"><img class="locateimg" src="https://traveltriangle.com/desktop_assets/build/commonIcon-icons-svg-1c4a0f4aa08ec7d683f452462d326219.svg#LocationMarkerIcon-usage" alt=""></span>
+           </div>
+           <input type="text" class="form-control rounded-0 border border-white" placeholder="To" aria-label="Username" aria-describedby="basic-addon1" required />
+         </div>
+        </div>
+
+
+        
+           <!-- checkbox -->
+           <div class="form-check">
+             <input class="form-check-input rounded-0 required" type="checkbox" value="" id="flexCheckDefault" />
+             <label class="form-check-label rounded-0" for="flexCheckDefault">
+                I am exploring destination
+             </label>
+           </div>
+           
+          <div class="fromsec">
+            <div>
+              <!-- from section -->
+              <h6><b>From: </b></h6>
+            </div>
+ 
+            <!-- departure area -->
+            <div class="input-group mb-3 border">
+             <div class="input-group-prepend">
+               <span class="input-group-text bg-white rounded-0 border border-white" id="basic-addon1"><img class="locateimg" src="https://traveltriangle.com/desktop_assets/build/commonIcon-icons-svg-1c4a0f4aa08ec7d683f452462d326219.svg#LocationMarkerIcon-usage" alt=""></span>
+             </div>
+             <input type="text" class="form-control rounded-0 border border-white required outline-white" placeholder="From" aria-label="Username" aria-describedby="basic-addon1" required />
+           </div>
+          </div>
+          <div class="d-flex flex-row ">
+           <div class="">
+             <h6><b>Departure Date: &nbsp;</b></h6>
+           </div>
+           <div class="">
+             <p>(choose any)</p>
+           </div>
+          </div>
+
+          <!-- buttons -->
+
+          <div class="buttons-option">
+           <div>
+             
+             <button type="button" class="btn btn-1" ><b>Fixed</b> </button>
+           </div>
+           <button type="button" class="btn btn-2"><b>Flexible</b></button>
+           <button type="button" class="btn btn-3"><b>Anytime</b></button>
+            </div>
+
+          <!-- next button -->
+          <div>
+
+          </div>
+          <button type="button" id="next1" class="next-btn outline-white" ><b>Next</b></button>
+           
+         </div>
+    </form>
+    <form action="" id="form2">
+        <form class="my-5 mx-4 border" action="">
+            <div class="mx-5 my-3 mb-5">
+
+               <!-- map side -->
+            <div  class="d-flex justify-content-center ">
+                <img class="phone" src="https://traveltriangle.com/desktop_assets/build/commonIcon-icons-svg-1c4a0f4aa08ec7d683f452462d326219.svg#LandlineIcon-usage" alt="">
+                
+            </div>
+            <div class="contactheading">
+              <p class="my-2 text-center">
+                How do we contact you?
+            </p>
+          </div>
+              
+              <div>
+                <!-- from section -->
+                <h6><b>Email ID</b> <span class="staric">*</span></h6>
+              </div>
+
+             
+
+              <!-- phone areaa -->
+              <div >
+                <div class="emailinputsec">
+                  
+        
+                  <!-- departure area -->
+                  <div class="input-group mb-3 border">
+                   <div class="input-group-prepend">
+                     <span class="input-group-text bg-white rounded-0 border border-white" id="basic-addon1"><img class="locateimg" src="https://traveltriangle.com/desktop_assets/build/commonIcon-icons-svg-1c4a0f4aa08ec7d683f452462d326219.svg#ContactIcon-usage" alt=""></span>
+                   </div>
+                   <input type="text" class="form-control rounded-0 border border-white" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" required/>
+                 </div>
+                </div>
+              
+                <!-- phone section -->
+                <h6><b>Phone Number</b> <span class="staric">*</span></h6>
+
+
+                <div class="phonesection">
+
+                  <div class="dropdown ml-2">
+                 <select class="form-control border  rounded-0">
+                  <span class="dropdownarrow"></span>
+                  <option value="number">+91</option>
+                  <option value="">+1</option>
+                  <option value="">+913</option>
+                  <option value="">+310</option>
+                  <option value="">+855</option>
+                  <option value="">+92</option>
+                  <option value="">+23</option>
+                  <option value="">+45</option>
+                  <option value="">+56</option>
+                  <option value="">+632</option>
+                  <option value="">+33</option>
+                  <option value="">+443</option>
+                 </select>
+                </div>
+                <div class="phoneinputsection ">
+                  <input  type="number"  class="form-control rounded-0 " placeholder="Enter Your Phone Number"  required>
+                </div>  
+                
+                
+              </div>
+              <div class="form-check my-3">
+                <input class="whatsappsection form-check-input  rounded-0" type="checkbox" value="" id="flexCheckDefault" required>
+                <img class="whatsappimg" src="https://traveltriangle.com/desktop_assets/build/commonIcon-icons-svg-1c4a0f4aa08ec7d683f452462d326219.svg#WhatsAppIcon-usage" alt="">
+                <label class="form-check-label" for="flexCheckDefault">
+                  send trip updates on Whatsapp
+                </label>
+              </div>
+              </div>
+
+
+           
+
+        
+
+             <!-- next button -->
+             <div class="page2buttons d-flex justify-content-between">
+
+              <div class="p2button1">
+                <button type="button" id="back1" class=" next-btn" onclick=""><b>&lt;</b></button>
+              </div>
+              <div class="p2button2">
+                <button type="button" id="next2" class=" next-btn" onclick=""><b>Plan My Holidays</b></button>
+              </div>
+
+             </div>
+            
+              
+            </div>
+        </form>
+    </form>
+    <form id="form3" class="formsection my-2 " action="">
+
+        <!-- skip side -->
+    <div class="skip">
+      <a  class="text-primary" href="">skip! I will do it later</a>
+    </div>
+        <div class="mx-5 my-3 mb-5">
+
+        <div class="preferheading">
+          <p class="my-2 text-center">
+            Great! Tell Us What You Prefer
+        </p>
+      </div>
+      
+      <!-- preferred section -->
+
+      <div class="d-flex flex-row ">
+        <div class=" ">
+          <h6 class="preferredhotelcategory"><b>Preferred Hotel Category&nbsp; &nbsp;</b></h6>
+        </div>
+        <div class="smallwording">
+          <p>Rating</p>
+        </div>
+
+        <div>
+          
+           <span class="staric">*</span>
+        </div>
+      </div>
+
+      <!-- star pickup section -->
+
+      <div class="form-check my-3 d-flex justify-content-between">
+        <div>
+          <input class="form-check-input  rounded-0" type="checkbox" value="" id="flexCheckDefault" required>
+        <label class="form-check-label" for="flexCheckDefault">
+         <span class="starsection"> 5 Star</span>  
+        </label>
+        </div>
+        
+        <div>
+          <input class="form-check-input  rounded-0" type="checkbox" value="" id="flexCheckDefault" required>
+        <label class="form-check-label" for="flexCheckDefault">
+          <span class="starsection">4 Star </span> 
+        </label>
+        </div>
+        
+        <div>
+          <input class="form-check-input  rounded-0" type="checkbox" value="" id="flexCheckDefault" required>
+          <label class="form-check-label" for="flexCheckDefault">
+            <span class="starsection">3 Star </span> 
+          </label>
+        </div>
+       
+        <div>
+          <input class="form-check-input  rounded-0" type="checkbox" value="" id="flexCheckDefault" required>
+        <label class="form-check-label" for="flexCheckDefault">
+          <span class="starsection">2 Star </span> 
+        </label>
+        </div>
+      </div>
+
+      <hr>
+
+        <!-- flight including section -->
+
+      <div class="d-flex justify-content-between">
+        
+            <div class="my-1">
+              
+              <h6 class="preferredhotelcategory"><span><img class="planesvg" src="https://traveltriangle.com/desktop_assets/build/commonIcon-icons-svg-1c4a0f4aa08ec7d683f452462d326219.svg#Flights-usage" alt=""></span> <b>Flights To be included?&nbsp; &nbsp;</b></h6>
+            </div>
+            
+            <div class="yesnobutton">
+              <button type="button" class="buttonyesno">Yes</button>
+              <button type="button" class="buttonyesno">No</button>
+            </div>
+
+      </div>
+
+      <hr>
+        <!-- budget section -->
+      <div class="d-flex flex-row ">
+        <div class=" ">
+          <h6 class="preferredhotelcategory"><b>Budget Without Airfare:&nbsp;</b></h6>
+        </div>
+        <div class="smallwording">
+          <p>(per person)</p>
+        </div>
+      </div>
+
+      <div class="budget">
+        <div class="input-group mb-3 border">
+          <div class="input-group-prepend ">
+            <span class="input-group-text bg-white rounded-0 border-0" id="basic-addon1"><img  class="dollarsvg" src="https://traveltriangle.com/desktop_assets/build/commonIcon-icons-svg-1c4a0f4aa08ec7d683f452462d326219.svg#BudgetIcon-usage" alt=""></span>
+          </div> 
+          <input type="text" class="form-control rounded-0 bg-white border-0" placeholder="Enter your budget value" aria-label="Username" aria-describedby="basic-addon1" required>
+        
+        </div>
+      </div>
+
+                    <!-- age section -->
+      <div class="agesection d-flex justify-content-between w-2">
+       <div class="agesec1">
+        <div class="d-flex flex-row ">
+          
+          <div class=" ">
+            <h6 class="preferredhotelcategory"><b>Adults&nbsp;</b></h6>
+          </div>
+          <div class="smallwording">
+            <p>12+ years</p>
+          </div>
+        </div>
+        <div class="agedropdown">
+            
+          <div class="dropdown">
+            <button class="dropbtn rounded-0 border secondary"><span><img class="personageemoji mb-1" src="https://traveltriangle.com/desktop_assets/build/commonIcon-icons-svg-1c4a0f4aa08ec7d683f452462d326219.svg#ProfileIconOld-usage"  alt=""></span>&nbsp; 2  <span><img class="dropdownarrowsvg" src="https://traveltriangle.com/desktop_assets/build/commonIcon-icons-svg-1c4a0f4aa08ec7d683f452462d326219.svg#DownArrow-usage" alt=""></span> </button>
+            <div class="dropdown-content">
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            </div>
+          </div>
+          
+        </div>
+       </div>
+        <div class="agesec2">
+          <div class="d-flex flex-row ">
+            
+            <div class=" ">
+              <h6 class="preferredhotelcategory"><b>Infant&nbsp;</b></h6>
+            </div>
+            <div class="smallwording">
+              <p>(0-2 years)</p>
+            </div>
+          </div>
+          <div class="agedropdown">
+              
+            <div class="dropdown">
+              <button class="dropbtn rounded-0 border secondary"><span><img class="personageemoji mb-1" src="https://traveltriangle.com/desktop_assets/build/commonIcon-icons-svg-1c4a0f4aa08ec7d683f452462d326219.svg#ProfileIconOld-usage"  alt=""></span>&nbsp; 2  <span><img class="dropdownarrowsvg" src="https://traveltriangle.com/desktop_assets/build/commonIcon-icons-svg-1c4a0f4aa08ec7d683f452462d326219.svg#DownArrow-usage" alt=""></span> </button>
+              <div class="dropdown-content">
+              <a href="#">1</a>
+              <a href="#">2</a>
+              <a href="#">3</a>
+              </div>
+            </div>
+            
+          </div>
+       </div>
+       <div class="agesec3">
+        <div class="d-flex flex-row ">
+          
+          <div class=" ">
+            <h6 class="preferredhotelcategory"><b>Childrens&nbsp;</b></h6>
+          </div>
+          <div class="smallwording">
+            <p>(2-12 years)</p>
+          </div>
+        </div>
+        <div class="agedropdown">
+            
+          <div class="dropdown">
+            <button class="dropbtn rounded-0 border secondary"><span><img class="personageemoji mb-1" src="https://traveltriangle.com/desktop_assets/build/commonIcon-icons-svg-1c4a0f4aa08ec7d683f452462d326219.svg#ProfileIconOld-usage"  alt=""></span>&nbsp; 2  <span><img class="dropdownarrowsvg" src="https://traveltriangle.com/desktop_assets/build/commonIcon-icons-svg-1c4a0f4aa08ec7d683f452462d326219.svg#DownArrow-usage" alt=""></span> </button>
+            <div class="dropdown-content">
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            </div>
+          </div>
+          
+        </div>
+      </div> 
+
+      
+      
+       </div>  
+       <div class="bookwill my-2 ">
+        <div class="d-flex justify-content-between">
+        
+          <div class="my-1">
+            
+            <h6 class="preferredhotelcategory"> <b>I Will Book&nbsp; &nbsp;</b></h6>
+          </div>
+          
+          <div class="yesnobutton">
+            <button type="button" class="buttonyesno">Clear</button>
+            
+          </div>
+
+          </div>
+          <div class="willbookbuttons ">
+            <div class="willbookbuttonsec1 col-md-4">
+              <button type="button" class="btna">In Next 2-3 Days</button>
+              <button type="button"class="btna">In this week</button>
+              <button type="button" class="btna">In this month</button>
+              <button type="button" class="btna">Later sometime</button>
+              <button type="button" class="btna">Just Checking Price</button>
+            </div>
+
+            <div class="willbookbuttonsec2 my-2 d-flex ">
+              
+              </div>
+          </div>
+       </div>
+
+         
+
+          
+
+
+       
+
+    
+
+         <!-- next button -->
+         <div class="lastbtn d-flex justify-content-between">
+          <div class="backbtn">
+            <button type="button" id="back2" class="back-btn btn btn-white rounded-0 text-danger border-danger" onclick=""><b>back</b></button>
+          </div>
+
+
+          <div class="nextbtn">
+            <button type="button" id="next3" class="button btn btn-danger rounded-0 text-white" onclick=""><b>next</b></button>
+          </div>
+         </div>
+        
+        
+    </form>
+   </div>
+
+   <script src="script.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+   
+   
+</body>
+</html>
