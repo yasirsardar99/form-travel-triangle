@@ -74,12 +74,18 @@
           <!-- buttons -->
 
           <div class="buttons-option">
-           <div>
+           
              
-             <button type="button" class="btn btn-1" ><b>Fixed</b> </button>
-           </div>
-           <button type="button" class="btn btn-2"><b>Flexible</b></button>
-           <button type="button" class="btn btn-3"><b>Anytime</b></button>
+            <!-- <button type="button" class="button-2 btn-2"><b>Fixed</b>
+            <input type="date">
+            </button> -->
+
+            <input type="date" class="buttondatepicker " required />
+             
+           
+         
+           <button type="button" class="button-2 btn-2"><b>Flexible</b></button>
+           <button type="button" class="button-3 btn-3"><b>Anytime</b></button>
             </div>
 
           <!-- next button -->
@@ -259,7 +265,7 @@
             </div>
             
             <div class="yesnobutton">
-              <button type="button" class="buttonyesno">Yes</button>
+              <button type="button" id="no" class="buttonyesno">Yes</button>
               <button type="button" class="buttonyesno">No</button>
             </div>
 
@@ -267,6 +273,33 @@
 
       <hr>
         <!-- budget section -->
+        <!-- budget with airfare -->
+      <div class="withairfare">
+        <div class="d-flex flex-row ">
+          <div class=" ">
+            <h6 class="preferredhotelcategory"><b>Budget With Airfare:&nbsp;</b></h6>
+          </div>
+          <div class="smallwording">
+            <p>(per person)</p>
+          </div>
+        </div>
+  
+        
+  
+        <div class="budget">
+          <div class="input-group mb-3 border">
+            <div class="input-group-prepend ">
+              <span class="input-group-text bg-white rounded-0 border-0" id="basic-addon1"><img  class="dollarsvg" src="https://traveltriangle.com/desktop_assets/build/commonIcon-icons-svg-1c4a0f4aa08ec7d683f452462d326219.svg#BudgetIcon-usage" alt=""></span>
+            </div> 
+            <input type="text" class="form-control rounded-0 bg-white border-0" placeholder="Enter your budget value" aria-label="Username" aria-describedby="basic-addon1" required>
+          
+          </div>
+        </div>
+      </div>
+
+      <!-- budget without airfare -->
+
+     <div class="withoutairfare">
       <div class="d-flex flex-row ">
         <div class=" ">
           <h6 class="preferredhotelcategory"><b>Budget Without Airfare:&nbsp;</b></h6>
@@ -275,6 +308,8 @@
           <p>(per person)</p>
         </div>
       </div>
+
+      
 
       <div class="budget">
         <div class="input-group mb-3 border">
@@ -285,6 +320,7 @@
         
         </div>
       </div>
+     </div>
 
                     <!-- age section -->
       <div class="agesection d-flex justify-content-between w-2">
@@ -400,19 +436,187 @@
     
 
          <!-- next button -->
-         <div class="lastbtn d-flex justify-content-between">
-          <div class="backbtn">
+         <div class="submit d-flex justify-content-between">
+          <div class="submitbackbtn">
             <button type="button" id="back2" class="back-btn btn btn-white rounded-0 text-danger border-danger" onclick=""><b>back</b></button>
           </div>
 
 
-          <div class="nextbtn">
+          <div class="submitbtn">
             <button type="button" id="next3" class="button btn btn-danger rounded-0 text-white" onclick=""><b>next</b></button>
           </div>
          </div>
         
         
     </form>
+
+    <form id="form4" class="formsection  " action="">
+
+      <!-- skip side -->
+  <div class="skip">
+    <a  class="text-primary" href="">skip! I will do it later</a>
+  </div>
+      <div class="mx-5 my-3 mb-5">
+
+      <div class="preferheading">
+        <p class="my-2 text-center">
+          Almost Done!
+      </p>
+    </div>
+    
+    <!-- preferred section -->
+
+    <div class="d-flex flex-row justify-content-between">
+      <div class=" ">
+        <h6 class="preferredhotelcategory"><span><img class="carimg" src="https://traveltriangle.com/desktop_assets/build/icons-svg-4836ed122c3cd7188fd9302961613cec.svg#CabIconFront-usage" alt=""></span> <b>Cab for local sightseeing?&nbsp; &nbsp;</b></h6>
+      </div>
+      <div class="yesnobutton">
+              <button type="button" id="no" class="buttonyesno">Yes</button>
+              &nbsp;
+              &nbsp;
+              &nbsp;
+              <button type="button" class="buttonyesno">No</button>
+      </div>
+    
+
+     
+    </div>
+
+    <!-- package prefer -->
+    <div class="bookwill my-2 ">
+      <div class="d-flex justify-content-between">
+      
+        <div class="my-1">
+          
+          <h6 class="preferredhotelcategory"> <b>Which type of package would you prefer?&nbsp; &nbsp;</b></h6>
+        </div>
+        
+        <div class="yesnobutton">
+          <button type="button" class="buttonyesno">Clear</button>
+          
+        </div>
+
+        </div>
+        <div class="willbookbuttons1">
+          <div class="willbookbuttonsec1 col-md-6 justify-content-between">
+           
+            <button type="button" class="btna1">Customizable Package</button>
+            <button type="button" class="btna1">Bestselling Standard Package</button>
+          </div>
+
+          
+        </div>
+     </div>
+
+     <!-- preffered time -->
+
+     <div class="bookwill my-2 ">
+      <div class="d-flex justify-content-between">
+      
+        <div class="my-1">
+          
+          <h6 class="preferredhotelcategory"> <b>Preferred time to call&nbsp; &nbsp;</b></h6>
+        </div>
+        
+        <div class="yesnobutton">
+          <button type="button" class="buttonyesno">Clear</button>
+          
+        </div>
+
+        </div>
+        <div class="willbookbuttons2">
+          <div class="willbookbuttonsec2 col-md-3 d-flex justify-content-between">
+            <button type="button" class="btna2">Anytime</button>
+            <button type="button"class="btna2">10 AM - 12 PM</button>
+            <button type="button" class="btna2">12 - 2 PM</button>
+            
+          </div>
+          <div class="willbookbuttonsec2 col-md-3 d-flex justify-content-between">
+              <button type="button" class="btna2">2 - 4 PM</button>
+              <button type="button" class="btna2">4 - 6 PM</button>
+              <button type="button" class="btna2">After 6</button>
+            </div>
+
+         
+        </div>
+     </div>
+
+
+    <!-- type of tour -->
+
+      <div class="bookwill my-2 ">
+          <div class="d-flex justify-content-between">
+          
+            <div class="my-1">
+              
+              <h6 class="preferredhotelcategory"> <b>Type of tour you want?&nbsp; &nbsp;</b></h6>
+            </div>
+            
+            <div class="yesnobutton">
+              <button type="button" class="buttonyesno">Clear</button>
+              
+            </div>
+  
+            </div>
+            <div class="willbookbuttons2">
+              <div class="willbookbuttonsec2 col-md-3 d-flex justify-content-between">
+                <button type="button" class="btna2">Honeymoon</button>
+                <button type="button"class="btna2">Family</button>
+                <button type="button" class="btna2">Adventure</button>
+                
+              </div>
+              <div class="willbookbuttonsec2 col-md-3 d-flex justify-content-between">
+                  <button type="button" class="btna2">Offbeat</button>
+                  <button type="button" class="btna2">Wildlife</button>
+                  <button type="button" class="btna2">Religious</button>
+                </div>
+  
+             
+            </div>
+         </div>
+
+
+         <!-- additional requirement -->
+
+         <div class="additionalrequirement">
+            
+          <div class="my-3">
+              
+              <h6 class="preferredhotelcategory"> <b>Type of tour you want?&nbsp; &nbsp;</b></h6>
+            </div>
+
+            <div > 
+              <textarea class="textarea1"placeholder="* Hotel names if you have already decided,
+* Special considerations, e.g. kid friendly,
+* Arrival and departure date / time, if tickets booked?"></textarea>
+            </div>
+
+         </div>
+
+       
+
+        
+
+
+     
+
+  
+
+       <!-- next button -->
+       <div class="submitsection d-flex justify-content-between">
+        <div class="backbtn">
+          <button type="button" id="back3" class="submitbackbtn btn btn-white rounded-0 text-danger border-danger" onclick=""><b>back</b></button>
+        </div>
+
+
+        <div class="">
+          <button type="button" id="submit" class="submitbtn button btn btn-danger rounded-0 text-white" onclick=""><b>Submit</b></button>
+        </div>
+       </div>
+      
+      
+  </form>
+
    </div>
 
    <script src="script.js"></script>
